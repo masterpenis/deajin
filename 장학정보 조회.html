@@ -1,0 +1,276 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>대진대학교 포털</title>
+        <link rel="stylesheet" href="deajin2.css">
+        <link rel="stylesheet" href="등록금 및 납부내역 조회.css">
+        <style>
+            /* 필요시 CSS 스타일 추가 */
+            #tuitionInfo {
+                margin-top: 20px;
+            }
+
+            /* 각 년도 및 학기별 콘텐츠 기본 숨김 처리 */
+            .tuitionInfo {
+                margin-top: 20px;
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <div id="header" valign="middle">
+                <div class="logo"><a href="index.html" target="_top"><img src="/deajinimg/logo.gif" alt="대진대학교" width="186"
+                            height="35"></a></div>
+                <div class="util"><span class="info"><strong>김유환님</strong>이 로그인 되었습니다</span>
+                    <span><a href="#"><img src="/deajinimg/util_authority.gif" align="middle"></a></span>
+                    <span><a href="#"><img src="/deajinimg/util_logout.gif" align="middle"></a></span>
+                </div>
+        </header>
+        <nav>
+            <div class="fnb" style="background-image: url('bar.png'); height: 31px;">
+                <ul>
+                    <li><a href="#">포털대진</a></li>
+                    <li><a href="#">G메일</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="left_area">
+                <img src="/deajinimg/download.gif" alt="대진대학교 포털">
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">부속기관</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">교수학습지원센터</a></li>
+                            <li><a href="#">교수혁신팀</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">기획·평가관리</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">제안제도</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">학적정보</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">개인신상정보</a></li>
+                            <li><a href="#">학적</a></li>
+                            <li><a href="#">교직 적성 및 인성검사</a></li>
+                            <li><a href="#">교직 이수증</a></li>
+                            <li><a href="#">부/복수/마이크로전공</a></li>
+                            <li><a href="#">전과신청</a></li>
+                            <li><a href="#">휴학/복학</a></li>
+                            <li><a href="#">전공관련안내</a></li>
+                            <li><a href="#">자격증</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">수업정보</a>
+                        <ul class="dropdown-content">
+                            <li><a href="시간표.html">시간표</a></li>
+                            <li><a href="#">강좌관리</a></li>
+                            <li><a href="#">강좌정보</a></li>
+                            <li><a href="#">강의실현황</a></li>
+                            <li><a href="#">교육과정</a></li>
+                            <li><a href="#">수강신청</a></li>
+                            <li><a href="#">글쓰기센터</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">성적정보</a>
+                        <ul class="dropdown-content">
+                            <li><a href="성적.html">성적</a></li>
+                            <li><a href="#">1:1 학점개선 멘토링</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">등록/장학정보</a>
+                        <ul class="dropdown-content">
+                            <li><a href="등록안내.html">등록안내</a></li>
+                            <li><a href="장학안내.html">장학안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">학생생활정보</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">예비군/민방위정보</a></li>
+                            <li><a href="#">생활관입사</a></li>
+                            <li><a href="#">유학신청</a></li>
+                            <li><a href="#">모의토익 신청</a></li>
+                            <li><a href="#">학생 모니터단</a></li>
+                            <li><a href="#">제안제도</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">지도교수상담</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">I-WIN 상담</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">증명서신청/발급</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">증명서발급안내</a></li>
+                            <li><a href="#">증명서신청</a></li>
+                            <li><a href="#">국제학생증 신청</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">학생생활상담센터</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">상담안내</a></li>
+                            
+                        </ul>
+                    </div>
+
+        </div>
+            <div class="right_area">
+                <!-- 테이블들을 감싸는 Flex 컨테이너 -->
+                <div class="table-container">
+                    <!-- 첫번째 테이블 (왼쪽) -->
+                    <div class="table-left">
+                        <table width="596">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" style="height:20px;">
+                                        <img src="/deajinimg/admicon1.gif" alt="등록안내" style="width:21px; height:20px; margin-top: 3px;">
+                                        <span style="font-size: 15px; font-weight: normal;">등록금 및 납부내역 조회</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th width="180" colspan="2">
+                                        <p style="background-color: #DFE9F3; height: 15px;"></p>
+                                    </th>
+                                </tr>
+                                <table width="760" class="table1">
+	
+                                    <tbody><tr class="tr" height="22">
+                                      <td width="40" style="background-color: rgb(135, 174, 205); font-size: 12px; color: #FFFFFF; text-align: center;">년도</td>
+                                      <td width="40" style="background-color: rgb(135, 174, 205); font-size: 12px; color: #FFFFFF; text-align: center;">학기</td>
+                                      <td width="200" style="background-color: rgb(135, 174, 205); font-size: 12px; color: #FFFFFF; text-align: center;">장학 구분명</td>
+                                      <td width="240" style="background-color: rgb(135, 174, 205); font-size: 12px; color: #FFFFFF; text-align: center;">장학지급금액</td>
+                                      <td width="240" style="background-color: rgb(135, 174, 205); font-size: 12px; color: #FFFFFF; text-align: center;">지급방법</td>
+                                    </tr>
+                                    <tr class="tr_a" height="27" style="background-color: rgb(255, 255, 255); font-size: 12px; color: black; text-align: center;">
+                                        <td align="center" style="background-color: rgb(255, 255, 255);">2025</td>
+                                        <td align="center" style="background-color: rgb(255, 255, 255);">1</td>
+                                        <td align="center" style="background-color: rgb(255, 255, 255);">국가장학I유형</td>	  
+                                        <td align="right" style="background-color: rgb(255, 255, 255);">1,750,000 원</td>
+                                        <td align="center" style="background-color: rgb(255, 255, 255);">학비감면</td>
+                                      </tr>	
+
+                                    <tr class="tr_a1" height="27">
+                                        <td align="center">2025</td>
+                                        <td align="center">1</td>
+                                        <td align="center">국가장학II유형</td>	  
+                                        <td align="right">200,000 원</td>
+                                        <td align="center">학비감면</td>
+                                      </tr>
+                                  
+                                      <tr class="tr_a" height="27" style="background-color: rgb(255, 255, 255); font-size: 12px; color: black; text-align: center;">
+                                        <td align="center" style="background-color: rgb(255, 255, 255);">2023</td>
+                                        <td align="center" style="background-color: rgb(255, 255, 255);">1</td>
+                                        <td align="center" style="background-color: rgb(255, 255, 255);">성적우수</td>	  
+                                        <td align="right" style="background-color: rgb(255, 255, 255);">2,029,500 원</td>
+                                        <td align="center" style="background-color: rgb(255, 255, 255);">학비감면</td>
+                                      </tr>	
+
+                                    <tr class="tr_a1" height="27">
+                                      <td align="center">2022</td>
+                                      <td align="center">2</td>
+                                      <td align="center">국가장학I유형</td>	  
+                                      <td align="right">1,750,000 원</td>
+                                      <td align="center">학비감면</td>
+                                    </tr>
+                                
+                                    <tr class="tr_a" height="27" style="background-color: rgb(255, 255, 255); font-size: 12px; color: black; text-align: center;">
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">2022</td>
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">2</td>
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">국가장학II유형</td>	  
+                                      <td align="right" style="background-color: rgb(255, 255, 255);">200,000 원</td>
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">학비감면</td>
+                                    </tr>
+                                
+                                    <tr class="tr_a1" height="27">
+                                      <td align="center">2022</td>
+                                      <td align="center">2</td>
+                                      <td align="center">국가장학II유형_추가</td>	  
+                                      <td align="right">30,000 원</td>
+                                      <td align="center">현금지급(계좌송금)</td>
+                                    </tr>
+                                
+                                    <tr class="tr_a" height="27">
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">2022</td>
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">1</td>
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">국가장학I유형</td>	  
+                                      <td align="right" style="background-color: rgb(255, 255, 255);">1,750,000 원</td>
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">학비감면</td>
+                                    </tr>
+                                
+                                    <tr class="tr_a1" height="27">
+                                      <td align="center">2022</td>
+                                      <td align="center">1</td>
+                                      <td align="center">국가장학II유형</td>	  
+                                      <td align="right">150,000 원</td>
+                                      <td align="center">학비감면</td>
+                                    </tr>
+                                
+                                    <tr class="tr_a" height="27">
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">2020</td>
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">1</td>
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">편입학장학</td>	  
+                                      <td align="right" style="background-color: rgb(255, 255, 255);">1,218,000 원</td>
+                                      <td align="center" style="background-color: rgb(255, 255, 255);">학비감면</td>
+                                    </tr>
+                                
+                                    <tr class="tr_a1" height="27">
+                                      <td align="center">2020</td>
+                                      <td align="center">1</td>
+                                      <td align="center">국가장학II유형(입학금감축대응지원)</td>	  
+                                      <td align="right">159,000 원</td>
+                                      <td align="center">학비감면</td>
+                                    </tr>
+                                
+                                
+                                </tbody></table>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody class="tuitionimg">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+           document.addEventListener('DOMContentLoaded', function () {
+                var dropdowns = document.querySelectorAll('.dropdown');
+
+                dropdowns.forEach(function (dropdown) {
+                    dropdown.addEventListener('click', function (event) {
+                        // 클릭한 대상이 드롭다운 버튼인 경우에만 preventDefault() 적용
+                        if (event.target.classList.contains('dropbtn')) {
+                            event.preventDefault();
+                            this.classList.toggle('active');
+                        }
+                        // 내부의 다른 링크를 클릭한 경우에는 기본 동작(페이지 이동)이 발생함
+                    });
+                });
+
+                document.addEventListener('click', function (e) {
+                    dropdowns.forEach(function (dropdown) {
+                        if (!dropdown.contains(e.target)) {
+                            dropdown.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        </script>
+
+    </html>
